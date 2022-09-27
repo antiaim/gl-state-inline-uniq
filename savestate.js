@@ -34,6 +34,8 @@ function unique_eq(list) {
       list[ptr++] = a
     }
   }
+  
+  
   list.length = ptr
   return list
 }
@@ -392,3 +394,5 @@ main_loop:
   var proc = new Function("gl", code)
   return proc(gl)
 }
+
+module.exports = createGLStateStack
