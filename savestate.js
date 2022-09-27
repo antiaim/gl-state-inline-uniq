@@ -55,6 +55,8 @@ function unique(list, compare, sorted) {
   return unique_eq(list)
 }
 
+uniq = unique
+
 function createGLStateStack(gl, variables) {
   //By default SAVE EVERYTHING
   if(!variables) {
@@ -393,6 +395,4 @@ main_loop:
   var proc = new Function("gl", code)
   return proc(gl)
 }
-
-uniq = unique
 
