@@ -394,5 +394,5 @@ main_loop:
   return proc(gl)
 }
 
-window.createGLStateStack = createGLStateStack
+uniq = unique
 
