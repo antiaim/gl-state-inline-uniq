@@ -1,4 +1,4 @@
-//"use strict"
+"use strict"
 function unique_pred(list, compare) {
   var ptr = 1
     , len = list.length
@@ -55,7 +55,7 @@ function unique(list, compare, sorted) {
   return unique_eq(list)
 }
 
-uniq = unique
+let uniq = unique
 
 function createGLStateStack(gl, variables) {
   //By default SAVE EVERYTHING
