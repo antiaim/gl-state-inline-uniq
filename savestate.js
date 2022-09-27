@@ -1,5 +1,5 @@
 "use strict"
-
+module.exports = createGLStateStack
 function unique_pred(list, compare) {
   var ptr = 1
     , len = list.length
@@ -395,4 +395,4 @@ main_loop:
   return proc(gl)
 }
 
-module.exports = createGLStateStack
+
