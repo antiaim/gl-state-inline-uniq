@@ -1,4 +1,4 @@
-"use strict"
+//"use strict"
 function unique_pred(list, compare) {
   var ptr = 1
     , len = list.length
