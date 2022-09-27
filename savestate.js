@@ -1,4 +1,3 @@
-
 "use strict"
 
 function unique_pred(list, compare) {
