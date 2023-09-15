@@ -57,7 +57,7 @@ function unique(list, compare, sorted) {
 
 let uniq = unique
 
-function createGLStateStack(gl, variables) {
+function createGLStateStack(gl, variables, opt) {
   //By default SAVE EVERYTHING
   if(!variables) {
     variables = [
@@ -151,7 +151,7 @@ function createGLStateStack(gl, variables) {
         return nvariables.indexOf(v) >= 0
       })) {
     //Generate code for saving texture state
-    var numTextures = gl.getParameter(gl.MAX_TEXTURE_IMAGE_UNITS)
+    var numTextures = opt[gl.MAX_TEXTURE_IMAGE_UNITS] ?? gl.getParameter(gl.MAX_TEXTURE_IMAGE_UNITS)
     ctorBody.push("this.textures=[];")
 
     //Generate save state for textures
